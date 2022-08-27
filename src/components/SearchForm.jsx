@@ -3,8 +3,8 @@ import { useGlobalContext } from "../context/context";
 
 
 function SearchForm() {
-    const value = useGlobalContext();
-    console.log(value);
+    //const value = useGlobalContext();
+     
     return(
         <div>
             searchform
