@@ -19,7 +19,7 @@ export default function AppProvider({ children }) {
             const res = await fetch(`${url}${search}`);
             const data = await res.json();
             if (res.ok) {
-                setItems(data);
+                setItems(data.drinks);
                 setIsLoading(false);
             } else {
                 setIsLoading(false);
