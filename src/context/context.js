@@ -1,13 +1,11 @@
 import React  from "react";
 
-
 const AppContext = React.createContext();
+const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
 
-
-function AppProvider({children}) {
-
-
-
+export default function AppProvider({children}) {
+    const [items, setItems] = React.useState([]);
+    const [isLoading, setIsLoading] = React.useState(true);
 
     return (
         <AppContext.Provider value="hello">
@@ -15,8 +13,6 @@ function AppProvider({children}) {
         </AppContext.Provider>
     )
 }
-
-export default AppProvider;
 
 export const useGlobalContext = () => {
     return React.useContext(AppContext);
