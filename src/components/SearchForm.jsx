@@ -15,7 +15,7 @@ function SearchForm() {
         <label htmlFor="search" className="form-label">
           Search your favourite cocktail you want
         </label>
-        <input placeholder="Enter cocktail" id="search" type="text" className="form-control" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+        <input id="search" type="text" className="form-control" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
       </div>
     </form>
   );
