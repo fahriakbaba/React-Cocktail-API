@@ -6,7 +6,10 @@ const URL = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 export default function AppProvider({ children }) {
     const [items, setItems] = React.useState([]);
     const [isLoading, setIsLoading] = React.useState(true);
-    const [searchTerm, setSearchTerm] = React.useState("margarita");
+    const [searchTerm, setSearchTerm] = React.useState("");
+
+    /* to create error state and <Error /> page */
+
 
     /* to get data from URL - start */
     React.useEffect(() => {
@@ -18,14 +21,14 @@ export default function AppProvider({ children }) {
         try {
             const res = await fetch(`${url}${search}`);
             const data = await res.json();
+            console.log(res);
             if (res.ok) {
                 setItems(data.drinks);
-                setIsLoading(false);
+                setIsLoading(false); 
             } else {
                 setIsLoading(false);
-
+                setItems([]);
             }
-
         } catch (error) {
             console.log(error);
             setIsLoading(false);
@@ -37,6 +40,8 @@ export default function AppProvider({ children }) {
         <AppContext.Provider value={{
             items,
             isLoading,
+            searchTerm,
+            setSearchTerm,
         }}>
             {children}
         </AppContext.Provider>
