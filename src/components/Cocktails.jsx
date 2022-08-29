@@ -35,7 +35,7 @@ function Cocktails() {
                   <div className="cocktail--buttons">
                     <button className="btn btn-details">
                       <Link
-                        to={`cocktail/:${idDrink}`}
+                        to={`cocktail/${idDrink}`}
                         className="cocktail--link"
                       >
                         Details
@@ -53,7 +53,7 @@ function Cocktails() {
       </main>
     );
   }
-  return <h2 className="cocktail--error">There is no cocktail item to show.</h2>;
+  return <h2 className="cocktail--error">There is no cocktail to show.</h2>;
 }
 
 export default Cocktails;

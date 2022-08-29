@@ -120,7 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 
 .loading--title {
@@ -248,8 +248,8 @@
 
 .cocktail--error {
   text-align: center;
-  margin-top: 10rem;
-  color: #F86427;
+  margin-top: 5rem;
+  color: red;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
