@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import MyImage from "../cocktail.png";
 
 function Navbar() {
   return (
@@ -8,8 +9,8 @@ function Navbar() {
         <Link to={"/"}>
           <img
             className="navbar--image"
-            src="https://www.thecocktaildb.com/images/logo.png"
-            alt=""
+            src={MyImage}
+            alt="Cocktail"
           />
         </Link>
       </div>

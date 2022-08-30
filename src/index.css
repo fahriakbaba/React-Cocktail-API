@@ -73,7 +73,7 @@
 }
 
 .about--container p strong {
-  color: #F86427;
+  color: #42855B;
   font-size: 1.3rem;
 }
 /* About -END */
@@ -90,7 +90,7 @@
   position: absolute;
   left: 8px;
   width: 16px;
-  background: #F86427;
+  background: #42855B;
   animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook div:nth-child(1) {
@@ -124,7 +124,8 @@
 }
 
 .loading--title {
-  color: #F86427;
+  /* color: #F86427; */
+  color: #42855B;
   margin-right: 8px;
   font-size: 1.5rem;
 } 
@@ -208,20 +209,25 @@
 .btn-details {
   background-color: #42855B;
   color: white;
-  border: 1px solid #42855B;
+  border: 2px solid #42855B;
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
 
 .btn-details:hover {
-  background-color: #90B77D;
-  border: 1px solid #90B77D;
+  background-color: white;
+  border: 2px solid #42855B;
+  color: #42855B;
 }
 
 .cocktail--link {
   text-decoration: none;
   color: white;
   font-weight: 500;
+}
+
+.btn-details:hover .cocktail--link {
+  color: #42855B;
 }
 
 .btn-add {
@@ -249,7 +255,7 @@
 .cocktail--error {
   text-align: center;
   margin-top: 5rem;
-  color: red;
+  color: #42855B;
   text-transform: capitalize;
   font-size: 1.5rem;
 }
@@ -322,3 +328,47 @@
   font-weight: normal;
 }
 /* SingelCocktail component - end*/
+
+/* Error Page - start */
+.error--page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.error-title {
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  color: #42855B;
+}
+
+.error--info {
+  font-size: 1.5rem;
+  opacity: .5;
+  margin-bottom: 1rem;
+}
+
+.error--btn {
+  background-color: #42855B;
+  border: 2px solid #42855B;
+  margin: 1.5rem 0;
+}
+
+.error--btn:hover {
+  background-color: white;
+}
+
+.error--btn:hover .error--link {
+  color: #42855B;
+}
+
+.error--link {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* Error Page - end */

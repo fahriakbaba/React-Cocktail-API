@@ -8,9 +8,6 @@ export default function AppProvider({ children }) {
     const [isLoading, setIsLoading] = React.useState(true);
     const [searchTerm, setSearchTerm] = React.useState("");
 
-    /* to create error state and <Error /> page */
-
-
     /* to get data from URL - start */
     React.useEffect(() => {
         getData(URL, searchTerm);
