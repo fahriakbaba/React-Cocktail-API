@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+![Main](./public/images/main.png)
+![About](./public/images/about.png)
+![Error](./public/images/errorpage.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
